@@ -1,0 +1,16 @@
+.background {
+  position: relative;
+  width: 100%; /* 画面全体に広がるように設定 */
+  height: 100%; /* 画面全体に広がるように設定 */
+}
+
+.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle, transparent 0, transparent 40px, rgba(0,0,0,0.2) 41px); /* 同心円のグラデーションを作成 */
+  background-size: 40px 40px; /* 同心円の間隔を40pxに設定 */
+}
