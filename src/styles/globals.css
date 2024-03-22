@@ -31,3 +31,18 @@
     text-wrap: balance;
   }
 }
+
+/* グリッドコンテナのスタイル */
+#container {
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  
+}
+
+/* グリッドアイテムのスタイル */
+#container > div {
+  /* background-color: lightblue; */
+  /* width: 120px;
+  height: 120px; */
+  /* border: 1px solid #000;  */
+}
